@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fabric Manufacturing Software</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Fabric Manufacturing</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul class="navbar-nav ms-auto">
+             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+             <li class="nav-item"><a class="nav-link" href="/sale">Sale</a></li>
+             <li class="nav-item"><a class="nav-link" href="/purchase">Purchase</a></li>
+             <li class="nav-item"><a class="nav-link" href="/sale-return">Sale Return</a></li>
+             <li class="nav-item"><a class="nav-link" href="/purchase-return">Purchase Return</a></li>
+             <li class="nav-item"><a class="nav-link" href="/profit">Profit</a></li>
+             <li class="nav-item"><a class="nav-link" href="/cash-flow">Cash Flow</a></li>
+             <li class="nav-item"><a class="nav-link" href="/cash-flow-report">Cash Flow Report</a></li>
+             <li class="nav-item"><a class="nav-link" href="/inventory">Inventory</a></li>
+             <li class="nav-item"><a class="nav-link" href="/supplier-ledger">Supplier Ledger</a></li>
+           </ul>
+         </div>
+      </div>
+    </nav>
+    <div class="container my-4">
+        {% block content %}{% endblock %}
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

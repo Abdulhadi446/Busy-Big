@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center p-5">
+    <h1 class="display-4">Welcome to Fabric Manufacturing Software</h1>
+    <p class="lead">Manage your sales, purchases, returns, profit, cash flow, and inventory.</p>
+    <a href="/sale" class="btn btn-primary mb-4">Add New Sale</a>
+    {% if sales %}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sale ID</th>
+                    <th>Product</th>
+                    <th>Date</th>
+                    <th>Total Sale</th>
+                    <th>Invoice</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sale in sales %}
+                <tr>
+                    <td>{{ loop.index0 }}</td>
+                    <td>{{ sale.product_name }}</td>
+                    <td>{{ sale.sale_date }}</td>
+                    <td>{{ sale.total_sale }}</td>
+                    <td><a href="/invoice/{{ loop.index0 }}" class="btn btn-sm btn-info">View</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No sales records found.</p>
+    {% endif %}
+</div>
+{% endblock %}

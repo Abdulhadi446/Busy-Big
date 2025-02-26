@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <h2 class="text-center">Invoice #{{ sale_id }}</h2>
+    <div class="invoice-details my-4">
+        <p><strong>Date:</strong> {{ sale.sale_date }}</p>
+        <p><strong>Product:</strong> {{ sale.product_name }}</p>
+        <p><strong>Quantity:</strong> {{ sale.quantity }}</p>
+        <p><strong>Unit Price:</strong> Rs{{ sale.unit_price }}</p>
+        <p><strong>Total Amount:</strong> Rs{{ sale.total_sale }}</p>
+    </div>
+    <div class="text-center">
+        <a href="{{ url_for('generate_invoice_pdf', sale_id=sale_id) }}" class="btn btn-success">Download PDF</a>
+        <a href="/" class="btn btn-secondary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

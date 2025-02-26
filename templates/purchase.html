@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Purchase Process</h2>
+
+<!-- Search Form -->
+<form method="GET" action="/purchase" class="mb-4">
+    <div class="input-group">
+      <input type="text" name="search" class="form-control" placeholder="Search by product, supplier, or date" value="{{ search_query }}">
+      <button type="submit" class="btn btn-outline-secondary">Search</button>
+    </div>
+</form>
+
+<!-- Purchase Entry Form -->
+<form method="POST" class="mb-4">
+    <div class="mb-3">
+        <label for="supplier_name" class="form-label">Supplier Name</label>
+        <input type="text" name="supplier_name" id="supplier_name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="product_name" class="form-label">Product Name</label>
+        <input type="text" name="product_name" id="product_name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="purchase_date" class="form-label">Purchase Date</label>
+        <input type="date" name="purchase_date" id="purchase_date" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="unit_price" class="form-label">Unit Price</label>
+        <input type="number" step="0.01" name="unit_price" id="unit_price" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="quantity" class="form-label">Quantity</label>
+        <input type="number" step="0.01" name="quantity" id="quantity" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Purchase Record</button>
+</form>
+{% if message %}
+    <div class="alert alert-info">{{ message }}</div>
+{% endif %}
+{% if records %}
+    <h4>Purchase Records</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Supplier</th>
+                <th>Product</th>
+                <th>Date</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total Purchase</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rec in records %}
+            <tr>
+                <td>{{ rec.supplier_name }}</td>
+                <td>{{ rec.product_name }}</td>
+                <td>{{ rec.purchase_date }}</td>
+                <td>{{ rec.unit_price }}</td>
+                <td>{{ rec.quantity }}</td>
+                <td>{{ rec.total_purchase }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Profit Calculation</h2>
+<form method="POST" class="mb-4">
+    <div class="mb-3">
+        <label for="operating_expenses" class="form-label">Operating Expenses</label>
+        <input type="number" step="0.01" name="operating_expenses" id="operating_expenses" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Calculate Profit</button>
+</form>
+{% if message %}
+    <div class="alert alert-danger">{{ message }}</div>
+{% endif %}
+{% if result %}
+    <h4>Profit Report</h4>
+    <table class="table table-bordered">
+        <tr>
+            <th>Total Sales</th>
+            <td>{{ result.total_sales }}</td>
+        </tr>
+        <tr>
+            <th>Total Sale Returns</th>
+            <td>{{ result.total_sale_returns }}</td>
+        </tr>
+        <tr>
+            <th>Net Sales</th>
+            <td>{{ result.net_sales }}</td>
+        </tr>
+        <tr>
+            <th>Total Purchases</th>
+            <td>{{ result.total_purchases }}</td>
+        </tr>
+        <tr>
+            <th>Total Purchase Returns</th>
+            <td>{{ result.total_purchase_returns }}</td>
+        </tr>
+        <tr>
+            <th>Net Purchases (COGS)</th>
+            <td>{{ result.net_purchases }}</td>
+        </tr>
+        <tr>
+            <th>Gross Profit</th>
+            <td>{{ result.gross_profit }}</td>
+        </tr>
+        <tr>
+            <th>Operating Expenses</th>
+            <td>{{ result.operating_expenses }}</td>
+        </tr>
+        <tr>
+            <th>Net Profit</th>
+            <td>{{ result.net_profit }}</td>
+        </tr>
+    </table>
+{% endif %}
+{% endblock %}

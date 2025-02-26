@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Supplier Ledger</h2>
+<div class="mb-3">
+    <a href="/supplier-ledger/pdf" class="btn btn-success">Download Entire Ledger as PDF</a>
+</div>
+{% if ledger %}
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+         <th>Supplier</th>
+         <th>Total Purchases</th>
+         <th>Total Purchase Returns</th>
+         <th>Net Amount</th>
+         <th>Details</th>
+         <th>Download PDF</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for supplier, data in ledger.items() %}
+      <tr>
+         <td>{{ supplier }}</td>
+         <td>${{ data.total_purchase }}</td>
+         <td>${{ data.total_return }}</td>
+         <td>${{ data.net }}</td>
+         <td>
+             <button class="btn btn-info btn-sm" data-bs-toggle="collapse" data-bs-target="#details-{{ loop.index }}">View Details</button>
+         </td>
+         <td>
+             <a href="/supplier-ledger/{{ supplier }}/pdf" class="btn btn-sm btn-success">Download PDF</a>
+         </td>
+      </tr>
+      <tr class="collapse" id="details-{{ loop.index }}">
+         <td colspan="6">
+             <h5>Purchases:</h5>
+             {% if data.purchases %}
+                 <table class="table table-sm table-striped">
+                     <thead>
+                         <tr>
+                             <th>Date</th>
+                             <th>Product</th>
+                             <th>Quantity</th>
+                             <th>Total Purchase</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         {% for p in data.purchases %}
+                         <tr>
+                             <td>{{ p.purchase_date }}</td>
+                             <td>{{ p.product_name }}</td>
+                             <td>{{ p.quantity }}</td>
+                             <td>${{ p.total_purchase }}</td>
+                         </tr>
+                         {% endfor %}
+                     </tbody>
+                 </table>
+             {% else %}
+                 <p>No purchases.</p>
+             {% endif %}
+             <h5>Purchase Returns:</h5>
+             {% if data.purchase_returns %}
+                 <table class="table table-sm table-striped">
+                     <thead>
+                         <tr>
+                             <th>Date</th>
+                             <th>Product</th>
+                             <th>Quantity</th>
+                             <th>Total Return</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         {% for pr in data.purchase_returns %}
+                         <tr>
+                             <td>{{ pr.return_date }}</td>
+                             <td>{{ pr.product_name }}</td>
+                             <td>{{ pr.quantity }}</td>
+                             <td>${{ pr.total_return }}</td>
+                         </tr>
+                         {% endfor %}
+                     </tbody>
+                 </table>
+             {% else %}
+                 <p>No purchase returns.</p>
+             {% endif %}
+         </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p>No ledger data available.</p>
+{% endif %}
+{% endblock %}

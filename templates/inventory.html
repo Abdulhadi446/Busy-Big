@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Inventory Management</h2>
+{% if summary %}
+    <h4>Inventory Summary</h4>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Total Purchased</th>
+                <th>Total Purchase Returns</th>
+                <th>Total Sold</th>
+                <th>Total Sales Returns</th>
+                <th>Current Inventory</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product, data in summary.items() %}
+            <tr>
+                <td>{{ product }}</td>
+                <td>{{ data.purchased }}</td>
+                <td>{{ data.purchase_returns }}</td>
+                <td>{{ data.sold }}</td>
+                <td>{{ data.sales_returns }}</td>
+                <td>{{ data.current_inventory }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No inventory data available.</p>
+{% endif %}
+{% endblock %}

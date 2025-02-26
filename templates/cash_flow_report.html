@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Cash Flow Report</h2>
+
+<h3>Daily Cash Flow</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Cash Inflow</th>
+            <th>Cash Outflow</th>
+            <th>Net Cash Flow</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in daily_flow %}
+        <tr>
+            <td>{{ record.date }}</td>
+            <td>{{ record.inflow }}</td>
+            <td>{{ record.outflow }}</td>
+            <td>{{ record.net }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h3>Weekly Cash Flow</h3>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Week</th>
+            <th>Cash Inflow</th>
+            <th>Cash Outflow</th>
+            <th>Net Cash Flow</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in weekly_flow %}
+        <tr>
+            <td>{{ record.week }}</td>
+            <td>{{ record.inflow }}</td>
+            <td>{{ record.outflow }}</td>
+            <td>{{ record.net }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
