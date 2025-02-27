@@ -20,9 +20,9 @@
       {% for supplier, data in ledger.items() %}
       <tr>
          <td>{{ supplier }}</td>
-         <td>${{ data.total_purchase }}</td>
-         <td>${{ data.total_return }}</td>
-         <td>${{ data.net }}</td>
+         <td>{{ data.total_purchase }}</td>
+         <td>{{ data.total_return }}</td>
+         <td>{{ data.net }}</td>
          <td>
              <button class="btn btn-info btn-sm" data-bs-toggle="collapse" data-bs-target="#details-{{ loop.index }}">View Details</button>
          </td>
@@ -49,7 +49,7 @@
                              <td>{{ p.purchase_date }}</td>
                              <td>{{ p.product_name }}</td>
                              <td>{{ p.quantity }}</td>
-                             <td>${{ p.total_purchase }}</td>
+                             <td>{{ p.total_purchase }}</td>
                          </tr>
                          {% endfor %}
                      </tbody>
@@ -74,7 +74,7 @@
                              <td>{{ pr.return_date }}</td>
                              <td>{{ pr.product_name }}</td>
                              <td>{{ pr.quantity }}</td>
-                             <td>${{ pr.total_return }}</td>
+                             <td>{{ pr.total_return }}</td>
                          </tr>
                          {% endfor %}
                      </tbody>

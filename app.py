@@ -516,7 +516,7 @@ def create_pdf(transactions, filename):
     )
 
     elements = []
-    company_header = Paragraph("HANIF PACKAGES (PVT) LTD.<br/>PURE GOLD", big_header_style)
+    company_header = Paragraph("Jibreel International", big_header_style)
     elements.append(company_header)
 
     # Adjusted column widths for six columns
@@ -614,8 +614,8 @@ def create_invoice_pdf(invoice, output_filename="invoice.pdf"):
 
     # Buyer Info & Invoice Meta
     metadata_data = [
-        ["Buyer:", invoice["buyer_name"]],
-        ["Address:", invoice["buyer_address"]],
+        # ["Buyer:", invoice["buyer_name"]],
+        # ["Address:", invoice["buyer_address"]],
         ["Serial No:", invoice["serial_no"]],
         ["Date:", invoice["date"]],
     ]
@@ -716,13 +716,13 @@ def generate_invoice_pdf(sale_id):
         sale = sales_records[sale_id]
         # Build the invoice dictionary based on the sale record.
         invoice = {
-            "company_name": "HANIF PACKAGES (PVT) LTD. PURE GOLD",
+            "company_name": "Jibreel International (PVT) LTD.",
             "invoice_title": "INVOICE",
-            "company_address": "1234 Main St, City, Country",
-            "company_tel": "+1-234-567-8900",
-            "company_email": "info@hanifpackages.com",
-            "buyer_name": "Valued Customer",
-            "buyer_address": "Customer Address",
+            "company_address": "Building W2R4+GWG Orangi Town, Karachi, Pakistan",
+            "company_tel": "0312-2157698",
+            "company_email": "info@jibreelinternational.com",
+            # "buyer_name": "Valued Customer",
+            # "buyer_address": "Customer Address",
             "serial_no": str(sale_id),
             "date": sale["sale_date"],
             "line_items": [
@@ -736,7 +736,7 @@ def generate_invoice_pdf(sale_id):
             "total_value_excl_tax": sale["unit_price"] * sale["quantity"],
             "total_sales_tax": 0.00,
             "total_value_incl_tax": sale["total_sale"],
-            "footer_note": "Signature for HANIF PACKAGES (PVT) LTD: █________________________________________█"
+            "footer_note": "Jibreel International (PVT) LTD: █________________________________________█"
         }
 
         # --- NEW CODE: Add sale returns information ---

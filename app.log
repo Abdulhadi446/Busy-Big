@@ -1434,3 +1434,390 @@
 2025-02-27 22:18:52,787 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
 2025-02-27 22:18:52,829 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
 2025-02-27 22:18:52,854 INFO: 127.0.0.1 - - [27/Feb/2025 22:18:52] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-28 00:14:21,023 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:14:21,269 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:14:21,269 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:14:21,280 INFO:  * Restarting with stat
+2025-02-28 00:14:21,844 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:14:21,878 WARNING:  * Debugger is active!
+2025-02-28 00:14:21,892 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:14:35,693 INFO: Request: GET / from 127.0.0.1
+2025-02-28 00:14:35,735 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:35] "GET / HTTP/1.1" 200 -
+2025-02-28 00:14:36,362 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:14:36,545 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:14:38,783 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-28 00:14:38,783 INFO: Supplier ledger generated
+2025-02-28 00:14:38,816 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:38] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-28 00:14:39,132 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:14:39,133 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:14:40,639 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:14:40,679 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:14:40,864 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:40] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:14:40,974 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:40] "GET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-28 00:14:41,042 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:41] "GET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-28 00:14:41,148 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:41] "GET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=C3MLOXQNOsK58kBas9qs HTTP/1.1" 200 -
+2025-02-28 00:14:41,264 INFO: 127.0.0.1 - - [28/Feb/2025 00:14:41] "GET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-28 00:15:27,376 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:15:27,385 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:15:27,390 INFO: 127.0.0.1 - - [28/Feb/2025 00:15:27] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:15:28,378 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:15:28,385 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:15:28,386 INFO: 127.0.0.1 - - [28/Feb/2025 00:15:28] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:17:11,524 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:17:11,531 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:17:11,610 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:11] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:17:11,697 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:11] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-28 00:17:11,699 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:11] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-28 00:17:11,758 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:11] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=C3MLOXQNOsK58kBas9qs HTTP/1.1[0m" 304 -
+2025-02-28 00:17:11,867 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:11] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-28 00:17:30,447 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:17:30,454 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:17:30,505 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:30] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:17:30,522 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:30] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-28 00:17:30,528 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:30] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-28 00:17:30,559 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:30] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=C3MLOXQNOsK58kBas9qs HTTP/1.1[0m" 304 -
+2025-02-28 00:17:30,649 INFO: 127.0.0.1 - - [28/Feb/2025 00:17:30] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-28 00:21:53,491 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:21:53,500 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:21:53,549 INFO: 127.0.0.1 - - [28/Feb/2025 00:21:53] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:21:53,571 INFO: 127.0.0.1 - - [28/Feb/2025 00:21:53] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-28 00:21:53,572 INFO: 127.0.0.1 - - [28/Feb/2025 00:21:53] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-28 00:21:53,601 INFO: 127.0.0.1 - - [28/Feb/2025 00:21:53] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=C3MLOXQNOsK58kBas9qs HTTP/1.1[0m" 304 -
+2025-02-28 00:21:53,699 INFO: 127.0.0.1 - - [28/Feb/2025 00:21:53] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-28 00:22:39,386 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:22:39,485 INFO:  * Restarting with stat
+2025-02-28 00:22:40,125 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:22:40,163 WARNING:  * Debugger is active!
+2025-02-28 00:22:40,172 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:22:56,842 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:22:56,918 INFO:  * Restarting with stat
+2025-02-28 00:22:57,771 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:22:57,817 WARNING:  * Debugger is active!
+2025-02-28 00:22:57,829 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:23:14,349 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:23:14,433 INFO:  * Restarting with stat
+2025-02-28 00:23:15,122 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:23:15,166 WARNING:  * Debugger is active!
+2025-02-28 00:23:15,179 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:23:18,866 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:23:18,975 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:23:18,976 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:23:18,978 INFO:  * Restarting with stat
+2025-02-28 00:23:19,652 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:23:19,700 WARNING:  * Debugger is active!
+2025-02-28 00:23:19,717 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:23:26,211 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:23:26,323 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:23:26,323 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:23:26,325 INFO:  * Restarting with stat
+2025-02-28 00:23:27,238 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:23:27,278 WARNING:  * Debugger is active!
+2025-02-28 00:23:27,289 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:23:31,389 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:23:31,413 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:23:31,497 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:31] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:23:31,990 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:31] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-28 00:23:32,008 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:32] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-28 00:23:32,060 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:32] "GET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=WdCVH71GLx1BAWOiM0ga HTTP/1.1" 200 -
+2025-02-28 00:23:32,164 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:32] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-02-28 00:23:40,292 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:23:40,300 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:23:40,357 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:40] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:23:40,394 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:40] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-28 00:23:40,396 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:40] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-28 00:23:40,453 INFO: 127.0.0.1 - - [28/Feb/2025 00:23:40] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=WdCVH71GLx1BAWOiM0ga HTTP/1.1[0m" 304 -
+2025-02-28 00:24:47,323 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:24:47,499 INFO:  * Restarting with stat
+2025-02-28 00:24:48,123 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:24:48,197 INFO:  * Restarting with stat
+2025-02-28 00:24:48,211 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:24:48,255 WARNING:  * Debugger is active!
+2025-02-28 00:24:48,268 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:24:48,904 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:24:48,953 WARNING:  * Debugger is active!
+2025-02-28 00:24:48,965 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:25:01,740 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:25:01,811 INFO:  * Restarting with stat
+2025-02-28 00:25:02,485 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:25:02,528 WARNING:  * Debugger is active!
+2025-02-28 00:25:02,541 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:25:03,430 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:25:03,514 INFO:  * Restarting with stat
+2025-02-28 00:25:04,602 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:25:04,663 WARNING:  * Debugger is active!
+2025-02-28 00:25:04,675 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:25:16,385 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:25:16,437 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:25:16,437 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:25:16,439 INFO:  * Restarting with stat
+2025-02-28 00:25:17,018 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:25:17,056 WARNING:  * Debugger is active!
+2025-02-28 00:25:17,066 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:25:29,659 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:25:29,682 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:25:29,762 INFO: 127.0.0.1 - - [28/Feb/2025 00:25:29] "[35m[1mGET /supplier-ledger/Umair/pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:25:30,353 INFO: 127.0.0.1 - - [28/Feb/2025 00:25:30] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-02-28 00:25:30,366 INFO: 127.0.0.1 - - [28/Feb/2025 00:25:30] "[36mGET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-02-28 00:25:30,426 INFO: 127.0.0.1 - - [28/Feb/2025 00:25:30] "GET /supplier-ledger/Umair/pdf?__debugger__=yes&cmd=resource&f=console.png&s=mxQuTXQgDSpaAnxtom4y HTTP/1.1" 200 -
+2025-02-28 00:26:17,144 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:26:17,151 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:26:17,164 INFO: 127.0.0.1 - - [28/Feb/2025 00:26:17] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:27:01,796 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:27:01,919 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:27:01,919 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:27:01,920 INFO:  * Restarting with stat
+2025-02-28 00:27:02,527 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:27:02,562 WARNING:  * Debugger is active!
+2025-02-28 00:27:02,572 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:27:04,864 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:27:04,886 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:27:04,907 INFO: 127.0.0.1 - - [28/Feb/2025 00:27:04] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:29:14,975 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:29:15,000 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:29:15,028 INFO: 127.0.0.1 - - [28/Feb/2025 00:29:15] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:31:00,946 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:31:00,965 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:31:00,985 INFO: 127.0.0.1 - - [28/Feb/2025 00:31:00] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:32:42,310 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:32:42,317 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:32:42,377 INFO: 127.0.0.1 - - [28/Feb/2025 00:32:42] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:33:31,713 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:33:31,726 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:33:31,727 INFO: 127.0.0.1 - - [28/Feb/2025 00:33:31] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:33:37,700 INFO: Request: GET /favicon.ico from 127.0.0.1
+2025-02-28 00:33:37,701 INFO: 127.0.0.1 - - [28/Feb/2025 00:33:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-28 00:34:59,656 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:34:59,808 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:34:59,849 INFO: 127.0.0.1 - - [28/Feb/2025 00:34:59] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:39:56,119 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:39:56,126 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:39:56,153 INFO: 127.0.0.1 - - [28/Feb/2025 00:39:56] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:41:07,484 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:41:07,652 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:41:07,653 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:41:07,655 INFO:  * Restarting with stat
+2025-02-28 00:41:08,516 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:41:08,557 WARNING:  * Debugger is active!
+2025-02-28 00:41:08,569 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:41:10,713 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:41:10,732 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:41:10,755 INFO: 127.0.0.1 - - [28/Feb/2025 00:41:10] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:41:12,443 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:41:12,459 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:41:12,460 INFO: 127.0.0.1 - - [28/Feb/2025 00:41:12] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:42:07,456 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:42:07,546 INFO:  * Restarting with stat
+2025-02-28 00:42:08,137 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:42:08,173 WARNING:  * Debugger is active!
+2025-02-28 00:42:08,183 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:44:37,733 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:44:37,833 INFO:  * Restarting with stat
+2025-02-28 00:44:38,520 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:44:38,580 WARNING:  * Debugger is active!
+2025-02-28 00:44:38,592 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:45:36,340 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:45:36,398 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:45:36,398 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:45:36,400 INFO:  * Restarting with stat
+2025-02-28 00:45:36,951 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:45:36,985 WARNING:  * Debugger is active!
+2025-02-28 00:45:36,995 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:45:41,778 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:45:41,795 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:45:41,813 INFO: 127.0.0.1 - - [28/Feb/2025 00:45:41] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:46:24,124 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:46:24,157 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:46:24,173 INFO: 127.0.0.1 - - [28/Feb/2025 00:46:24] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:46:58,706 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:46:58,717 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:46:58,722 INFO: 127.0.0.1 - - [28/Feb/2025 00:46:58] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:47:19,012 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:47:19,083 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:47:19,083 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:47:19,085 INFO:  * Restarting with stat
+2025-02-28 00:47:19,754 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:47:19,802 WARNING:  * Debugger is active!
+2025-02-28 00:47:19,813 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:47:54,142 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:47:54,161 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:47:54,178 INFO: 127.0.0.1 - - [28/Feb/2025 00:47:54] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:50:10,265 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:50:10,336 INFO:  * Restarting with stat
+2025-02-28 00:50:10,939 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:50:10,977 WARNING:  * Debugger is active!
+2025-02-28 00:50:10,986 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:50:13,910 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:50:13,987 INFO:  * Restarting with stat
+2025-02-28 00:50:14,758 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:50:14,802 WARNING:  * Debugger is active!
+2025-02-28 00:50:14,813 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:50:26,126 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 00:50:26,187 INFO:  * Restarting with stat
+2025-02-28 00:50:26,761 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:51:30,412 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:51:30,497 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:51:30,497 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:51:30,499 INFO:  * Restarting with stat
+2025-02-28 00:51:31,519 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:51:31,556 WARNING:  * Debugger is active!
+2025-02-28 00:51:31,566 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:51:33,248 INFO: Request: GET /pdf from 127.0.0.1
+2025-02-28 00:51:33,311 INFO: 127.0.0.1 - - [28/Feb/2025 00:51:33] "[35m[1mGET /pdf HTTP/1.1[0m" 500 -
+2025-02-28 00:51:33,764 INFO: 127.0.0.1 - - [28/Feb/2025 00:51:33] "GET /pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-28 00:51:33,780 INFO: 127.0.0.1 - - [28/Feb/2025 00:51:33] "GET /pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-28 00:51:33,883 INFO: 127.0.0.1 - - [28/Feb/2025 00:51:33] "GET /pdf?__debugger__=yes&cmd=resource&f=console.png&s=N5LoC9J7GyzcHSDNFGfg HTTP/1.1" 200 -
+2025-02-28 00:51:33,997 INFO: 127.0.0.1 - - [28/Feb/2025 00:51:33] "GET /pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-28 00:56:59,765 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:56:59,831 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 00:56:59,831 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 00:56:59,833 INFO:  * Restarting with stat
+2025-02-28 00:57:00,500 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 00:57:00,536 WARNING:  * Debugger is active!
+2025-02-28 00:57:00,546 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 00:57:02,284 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:57:02,298 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:57:02,473 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:02] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:57:03,505 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:57:03,532 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:57:03,558 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:03] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:57:07,035 INFO: Request: GET /supplier-ledger/Umair/ from 127.0.0.1
+2025-02-28 00:57:07,036 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:07] "[33mGET /supplier-ledger/Umair/ HTTP/1.1[0m" 404 -
+2025-02-28 00:57:15,258 INFO: Request: GET /supplier-ledger/Umair/ from 127.0.0.1
+2025-02-28 00:57:15,258 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:15] "[33mGET /supplier-ledger/Umair/ HTTP/1.1[0m" 404 -
+2025-02-28 00:57:19,488 INFO: Request: GET / from 127.0.0.1
+2025-02-28 00:57:19,505 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:19] "GET / HTTP/1.1" 200 -
+2025-02-28 00:57:19,549 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:57:19,551 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:19] "GET /static/styles.css HTTP/1.1" 200 -
+2025-02-28 00:57:36,366 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-28 00:57:36,366 INFO: Supplier ledger generated
+2025-02-28 00:57:36,376 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:36] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-28 00:57:36,431 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:57:36,433 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:36] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:57:38,071 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 00:57:38,084 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 00:57:38,120 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:38] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 00:57:52,027 INFO: Request: GET /inventory from 127.0.0.1
+2025-02-28 00:57:52,027 INFO: Inventory report generated
+2025-02-28 00:57:52,058 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:52] "GET /inventory HTTP/1.1" 200 -
+2025-02-28 00:57:52,104 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:57:52,109 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:57:53,781 INFO: Request: GET /cash-flow-report from 127.0.0.1
+2025-02-28 00:57:53,781 INFO: Cash flow report generated: Daily: [{'date': '2025-02-25', 'inflow': 0, 'outflow': 1000.0, 'net': -1000.0}, {'date': '2025-02-26', 'inflow': 1600.0, 'outflow': 1800.0, 'net': -200.0}, {'date': '2025-02-27', 'inflow': -800.0, 'outflow': 50.0, 'net': -850.0}], Weekly: [{'week': '2025-W9', 'inflow': 800.0, 'outflow': 2850.0, 'net': -2050.0}]
+2025-02-28 00:57:53,799 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:53] "GET /cash-flow-report HTTP/1.1" 200 -
+2025-02-28 00:57:53,834 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:57:53,835 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:57:56,763 INFO: Request: GET /cash-flow from 127.0.0.1
+2025-02-28 00:57:56,763 INFO: Cash flow calculated: {'opening_balance': 0.0, 'cash_inflow': 800.0, 'cash_outflow': 2850.0, 'additional_outflow': 0.0, 'closing_balance': -2050.0}
+2025-02-28 00:57:56,808 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:56] "GET /cash-flow HTTP/1.1" 200 -
+2025-02-28 00:57:56,842 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:57:56,843 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:56] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:57:58,922 INFO: Request: GET /profit from 127.0.0.1
+2025-02-28 00:57:58,922 INFO: Profit calculated: {'total_sales': 1600.0, 'total_sale_returns': 800.0, 'net_sales': 800.0, 'total_purchases': 2900.0, 'total_purchase_returns': 50.0, 'net_purchases': 2850.0, 'gross_profit': -2050.0, 'operating_expenses': 0.0, 'net_profit': -2050.0}
+2025-02-28 00:57:58,948 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:58] "GET /profit HTTP/1.1" 200 -
+2025-02-28 00:57:59,000 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:57:59,002 INFO: 127.0.0.1 - - [28/Feb/2025 00:57:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:58:00,550 INFO: Request: GET /purchase-return from 127.0.0.1
+2025-02-28 00:58:00,575 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:00] "GET /purchase-return HTTP/1.1" 200 -
+2025-02-28 00:58:00,613 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:58:00,615 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:58:03,013 INFO: Request: GET /sale-return from 127.0.0.1
+2025-02-28 00:58:03,023 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:03] "GET /sale-return HTTP/1.1" 200 -
+2025-02-28 00:58:03,071 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:58:03,072 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:58:05,707 INFO: Request: GET /purchase from 127.0.0.1
+2025-02-28 00:58:05,732 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:05] "GET /purchase HTTP/1.1" 200 -
+2025-02-28 00:58:05,798 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:58:05,800 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:58:07,969 INFO: Request: GET / from 127.0.0.1
+2025-02-28 00:58:07,974 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:07] "GET / HTTP/1.1" 200 -
+2025-02-28 00:58:08,031 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:58:08,033 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 00:58:09,263 INFO: Request: GET /sale from 127.0.0.1
+2025-02-28 00:58:09,291 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:09] "GET /sale HTTP/1.1" 200 -
+2025-02-28 00:58:09,332 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 00:58:09,333 INFO: 127.0.0.1 - - [28/Feb/2025 00:58:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 01:13:31,328 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:13:31,416 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 01:13:31,416 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 01:13:31,418 INFO:  * Restarting with stat
+2025-02-28 01:13:32,635 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:13:32,674 WARNING:  * Debugger is active!
+2025-02-28 01:13:32,689 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 01:13:38,731 INFO: Request: GET / from 127.0.0.1
+2025-02-28 01:13:38,755 INFO: 127.0.0.1 - - [28/Feb/2025 01:13:38] "GET / HTTP/1.1" 200 -
+2025-02-28 01:13:38,816 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 01:13:39,070 INFO: 127.0.0.1 - - [28/Feb/2025 01:13:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 01:13:42,712 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-28 01:13:42,712 INFO: Generating invoice for sale_id 0
+2025-02-28 01:13:42,750 INFO: 127.0.0.1 - - [28/Feb/2025 01:13:42] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-28 01:13:42,798 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 01:13:42,799 INFO: 127.0.0.1 - - [28/Feb/2025 01:13:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 01:13:43,977 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-28 01:13:44,042 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-28 01:13:44,088 INFO: 127.0.0.1 - - [28/Feb/2025 01:13:44] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-28 01:15:57,685 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 01:15:57,762 INFO:  * Restarting with stat
+2025-02-28 01:15:58,447 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:15:58,483 WARNING:  * Debugger is active!
+2025-02-28 01:15:58,494 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 01:16:05,810 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-28 01:16:05,810 INFO: Generating invoice for sale_id 0
+2025-02-28 01:16:05,830 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:05] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-28 01:16:05,868 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 01:16:06,034 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 01:16:07,983 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-28 01:16:08,052 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:08] "[35m[1mGET /invoice/0/pdf HTTP/1.1[0m" 500 -
+2025-02-28 01:16:08,091 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:08] "GET /invoice/0/pdf?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-02-28 01:16:08,098 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:08] "GET /invoice/0/pdf?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-02-28 01:16:08,127 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:08] "GET /invoice/0/pdf?__debugger__=yes&cmd=resource&f=console.png&s=aiXWLK2to292GMcN0v04 HTTP/1.1" 200 -
+2025-02-28 01:16:08,210 INFO: 127.0.0.1 - - [28/Feb/2025 01:16:08] "GET /invoice/0/pdf?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-02-28 01:16:18,840 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 01:16:18,903 INFO:  * Restarting with stat
+2025-02-28 01:16:19,544 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:16:19,581 WARNING:  * Debugger is active!
+2025-02-28 01:16:19,592 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 01:19:12,961 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-28 01:19:13,023 INFO:  * Restarting with stat
+2025-02-28 01:19:13,651 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:19:13,691 WARNING:  * Debugger is active!
+2025-02-28 01:19:13,702 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 01:19:27,189 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:19:27,296 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-28 01:19:27,296 INFO: [33mPress CTRL+C to quit[0m
+2025-02-28 01:19:27,299 INFO:  * Restarting with stat
+2025-02-28 01:19:28,557 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-28 01:19:28,612 WARNING:  * Debugger is active!
+2025-02-28 01:19:28,629 INFO:  * Debugger PIN: 169-371-690
+2025-02-28 01:19:32,898 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-28 01:19:32,947 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-28 01:19:33,374 INFO: 127.0.0.1 - - [28/Feb/2025 01:19:33] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-28 01:19:39,602 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-28 01:19:39,648 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-28 01:19:39,682 INFO: 127.0.0.1 - - [28/Feb/2025 01:19:39] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-28 01:20:26,083 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-28 01:20:26,084 INFO: Supplier ledger generated
+2025-02-28 01:20:26,121 INFO: 127.0.0.1 - - [28/Feb/2025 01:20:26] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-28 01:20:26,188 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 01:20:26,191 INFO: 127.0.0.1 - - [28/Feb/2025 01:20:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-28 01:20:28,117 INFO: Request: GET /supplier-ledger/pdf from 127.0.0.1
+2025-02-28 01:20:28,124 INFO: Aggregated Supplier ledger PDF generated
+2025-02-28 01:20:28,176 INFO: 127.0.0.1 - - [28/Feb/2025 01:20:28] "GET /supplier-ledger/pdf HTTP/1.1" 200 -
+2025-02-28 01:20:36,338 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-28 01:20:36,353 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-28 01:20:36,398 INFO: 127.0.0.1 - - [28/Feb/2025 01:20:36] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-28 01:22:29,704 INFO: Request: GET / from 127.0.0.1
+2025-02-28 01:22:29,711 INFO: 127.0.0.1 - - [28/Feb/2025 01:22:29] "GET / HTTP/1.1" 200 -
+2025-02-28 01:22:29,759 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-28 01:22:29,760 INFO: 127.0.0.1 - - [28/Feb/2025 01:22:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
