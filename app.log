@@ -1265,3 +1265,172 @@
 2025-02-27 21:46:32,199 INFO: 127.0.0.1 - - [27/Feb/2025 21:46:32] "GET /sale-return HTTP/1.1" 200 -
 2025-02-27 21:46:32,628 INFO: Request: GET /static/styles.css from 127.0.0.1
 2025-02-27 21:46:32,628 INFO: 127.0.0.1 - - [27/Feb/2025 21:46:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:49:27,176 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:49:27,261 INFO:  * Restarting with stat
+2025-02-27 21:49:27,902 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:49:38,643 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:49:57,355 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:49:57,443 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 21:49:57,443 INFO: [33mPress CTRL+C to quit[0m
+2025-02-27 21:49:57,445 INFO:  * Restarting with stat
+2025-02-27 21:49:58,024 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:49:58,058 WARNING:  * Debugger is active!
+2025-02-27 21:49:58,068 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:50:02,375 INFO: Request: GET /sale-return from 127.0.0.1
+2025-02-27 21:50:02,388 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:02] "GET /sale-return HTTP/1.1" 200 -
+2025-02-27 21:50:02,434 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:50:02,612 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:50:04,169 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:50:04,175 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:04] "GET / HTTP/1.1" 200 -
+2025-02-27 21:50:04,204 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:50:04,205 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:50:34,661 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 21:50:34,661 INFO: Generating invoice for sale_id 0
+2025-02-27 21:50:34,668 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:34] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 21:50:34,715 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:50:34,716 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:50:45,057 INFO: Request: GET /sale-return from 127.0.0.1
+2025-02-27 21:50:45,057 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:45] "GET /sale-return HTTP/1.1" 200 -
+2025-02-27 21:50:45,093 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:50:45,094 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:50:57,297 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:50:57,299 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:57] "GET / HTTP/1.1" 200 -
+2025-02-27 21:50:57,368 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:50:57,370 INFO: 127.0.0.1 - - [27/Feb/2025 21:50:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:51:00,628 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 21:51:00,628 INFO: Generating invoice for sale_id 0
+2025-02-27 21:51:00,629 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:00] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 21:51:00,658 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:51:00,659 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:51:11,446 INFO: Request: POST /sale-return from 127.0.0.1
+2025-02-27 21:51:11,448 INFO: Data saved to e:\Busy Big\data.json
+2025-02-27 21:51:11,449 INFO: Added sale return record: {'product_name': 'cotton', 'return_date': '2025-02-27', 'unit_price': 200.0, 'quantity': 4.0, 'refund_amount': 800.0}
+2025-02-27 21:51:11,450 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:11] "POST /sale-return HTTP/1.1" 200 -
+2025-02-27 21:51:11,483 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:51:11,484 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:11] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:51:30,007 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:51:30,008 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:30] "GET / HTTP/1.1" 200 -
+2025-02-27 21:51:30,046 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:51:30,048 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:51:39,770 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 21:51:39,770 INFO: Generating invoice for sale_id 0
+2025-02-27 21:51:39,770 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:39] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 21:51:39,812 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:51:39,813 INFO: 127.0.0.1 - - [27/Feb/2025 21:51:39] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:53:40,431 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 21:53:40,432 INFO: Supplier ledger generated
+2025-02-27 21:53:40,451 INFO: 127.0.0.1 - - [27/Feb/2025 21:53:40] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-27 21:53:40,483 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:53:40,484 INFO: 127.0.0.1 - - [27/Feb/2025 21:53:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:54:37,950 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:54:37,951 INFO: 127.0.0.1 - - [27/Feb/2025 21:54:37] "GET / HTTP/1.1" 200 -
+2025-02-27 21:54:37,983 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:54:37,984 INFO: 127.0.0.1 - - [27/Feb/2025 21:54:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:54:40,952 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:54:40,952 INFO: 127.0.0.1 - - [27/Feb/2025 21:54:40] "GET / HTTP/1.1" 200 -
+2025-02-27 21:54:40,978 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:54:40,979 INFO: 127.0.0.1 - - [27/Feb/2025 21:54:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:55:41,411 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 21:55:41,412 INFO: Supplier ledger generated
+2025-02-27 21:55:41,413 INFO: 127.0.0.1 - - [27/Feb/2025 21:55:41] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-27 21:55:41,458 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:55:41,459 INFO: 127.0.0.1 - - [27/Feb/2025 21:55:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:55:42,773 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-27 21:55:42,793 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-27 21:55:42,813 INFO: 127.0.0.1 - - [27/Feb/2025 21:55:42] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 21:56:46,566 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:56:46,644 INFO:  * Restarting with stat
+2025-02-27 21:56:47,252 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:56:47,287 WARNING:  * Debugger is active!
+2025-02-27 21:56:47,296 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:56:53,820 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-27 21:56:53,839 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-27 21:56:54,016 INFO: 127.0.0.1 - - [27/Feb/2025 21:56:54] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 21:58:22,279 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:58:22,292 INFO: 127.0.0.1 - - [27/Feb/2025 21:58:22] "GET /sale HTTP/1.1" 200 -
+2025-02-27 21:58:22,324 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:58:22,327 INFO: 127.0.0.1 - - [27/Feb/2025 21:58:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:58:24,176 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:58:24,181 INFO: 127.0.0.1 - - [27/Feb/2025 21:58:24] "GET / HTTP/1.1" 200 -
+2025-02-27 21:58:24,212 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:58:24,213 INFO: 127.0.0.1 - - [27/Feb/2025 21:58:24] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:58:25,581 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 21:58:25,581 INFO: Generating invoice for sale_id 0
+2025-02-27 21:58:25,587 INFO: 127.0.0.1 - - [27/Feb/2025 21:58:25] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 21:58:25,626 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:58:25,628 INFO: 127.0.0.1 - - [27/Feb/2025 21:58:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:59:29,196 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:59:29,196 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:29] "GET / HTTP/1.1" 200 -
+2025-02-27 21:59:29,229 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:59:29,230 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:59:33,640 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:59:33,641 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:33] "GET /sale HTTP/1.1" 200 -
+2025-02-27 21:59:33,673 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:59:33,674 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:59:41,649 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:59:41,649 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:41] "GET / HTTP/1.1" 200 -
+2025-02-27 21:59:41,685 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:59:41,686 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:59:45,575 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:59:45,576 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:45] "GET /sale HTTP/1.1" 200 -
+2025-02-27 21:59:45,606 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:59:45,607 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:59:50,762 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:59:50,763 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:50] "GET /sale?search=2025-02-26 HTTP/1.1" 200 -
+2025-02-27 21:59:50,797 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:59:50,798 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:59:57,099 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:59:57,100 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:57] "GET /sale?search=2025-02-25 HTTP/1.1" 200 -
+2025-02-27 21:59:57,137 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:59:57,138 INFO: 127.0.0.1 - - [27/Feb/2025 21:59:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:00:05,619 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 22:00:05,621 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:05] "GET /sale?search=amir HTTP/1.1" 200 -
+2025-02-27 22:00:05,651 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:00:05,652 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:00:13,703 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 22:00:13,704 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:13] "GET /sale?search=amir HTTP/1.1" 200 -
+2025-02-27 22:00:13,727 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:00:13,728 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:00:17,413 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 22:00:17,414 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:17] "GET /sale HTTP/1.1" 200 -
+2025-02-27 22:00:17,448 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:00:17,449 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:00:26,448 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 22:00:26,449 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:26] "GET /sale?search=cotton HTTP/1.1" 200 -
+2025-02-27 22:00:26,496 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:00:26,497 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:26] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:00:37,933 INFO: Request: GET /purchase from 127.0.0.1
+2025-02-27 22:00:37,969 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:37] "GET /purchase HTTP/1.1" 200 -
+2025-02-27 22:00:38,844 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:00:38,845 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:00:53,225 INFO: Request: GET /purchase from 127.0.0.1
+2025-02-27 22:00:53,225 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:53] "GET /purchase?search=cotton HTTP/1.1" 200 -
+2025-02-27 22:00:53,262 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:00:53,263 INFO: 127.0.0.1 - - [27/Feb/2025 22:00:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:01:35,768 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 22:01:35,769 INFO: 127.0.0.1 - - [27/Feb/2025 22:01:35] "GET /sale HTTP/1.1" 200 -
+2025-02-27 22:01:35,813 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:01:35,815 INFO: 127.0.0.1 - - [27/Feb/2025 22:01:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:01:38,583 INFO: Request: GET / from 127.0.0.1
+2025-02-27 22:01:38,584 INFO: 127.0.0.1 - - [27/Feb/2025 22:01:38] "GET / HTTP/1.1" 200 -
+2025-02-27 22:01:38,621 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:01:38,622 INFO: 127.0.0.1 - - [27/Feb/2025 22:01:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:01:48,338 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 22:01:48,338 INFO: Generating invoice for sale_id 0
+2025-02-27 22:01:48,338 INFO: 127.0.0.1 - - [27/Feb/2025 22:01:48] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 22:01:48,373 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:01:48,374 INFO: 127.0.0.1 - - [27/Feb/2025 22:01:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:18:40,059 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 22:18:40,291 INFO:  * Restarting with stat
+2025-02-27 22:18:44,169 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 22:18:44,453 WARNING:  * Debugger is active!
+2025-02-27 22:18:44,472 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 22:18:46,535 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 22:18:46,535 INFO: Generating invoice for sale_id 0
+2025-02-27 22:18:46,553 INFO: 127.0.0.1 - - [27/Feb/2025 22:18:46] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 22:18:47,168 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 22:18:47,391 INFO: 127.0.0.1 - - [27/Feb/2025 22:18:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 22:18:52,787 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 22:18:52,829 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 22:18:52,854 INFO: 127.0.0.1 - - [27/Feb/2025 22:18:52] "GET /invoice/0/pdf HTTP/1.1" 200 -

@@ -42,7 +42,15 @@
             "total_purchase": 100.0
         }
     ],
-    "sale_return_records": [],
+    "sale_return_records": [
+        {
+            "product_name": "cotton",
+            "return_date": "2025-02-27",
+            "unit_price": 200.0,
+            "quantity": 4.0,
+            "refund_amount": 800.0
+        }
+    ],
     "purchase_return_records": [
         {
             "supplier_name": "Umair",

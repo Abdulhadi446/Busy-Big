@@ -467,27 +467,41 @@ def format_number(n):
 def create_pdf(transactions, filename):
     """
     Creates a PDF with an Excel-like grid based on the transactions.
+    The table now has separate columns for purchase and return values.
     """
+    # Calculate totals separately for purchase and returns
     total_quantity = sum(t.get("quantity", 0) for t in transactions)
-    total_credit = sum(t.get("credit", 0) for t in transactions)
+    total_purchase = sum(t.get("balance", 0) for t in transactions if "credit" not in t)
+    total_return = sum(t.get("credit", 0) for t in transactions if "credit" in t)
 
     table_data = []
-    header = ["DATE", "PRODUCT", "QUANTITY", "UNITY\nPRICE", "TOTAL\nPURCHASE"]
+    # Updated header with an extra "RETURN" column
+    header = ["DATE", "PRODUCT", "QUANTITY", "UNITY\nPRICE", "PURCHASE", "RETURN"]
     table_data.append(header)
 
     for t in transactions:
         qty = t.get("quantity", 0)
+        # Compute unit price if quantity is nonzero
         unit_price = int(t["balance"] / qty) if qty else ""
+        # Determine if this transaction is a purchase or a return
+        if "credit" in t:
+            purchase_value = ""
+            return_value = format_number(t.get("balance", 0))
+        else:
+            purchase_value = format_number(t.get("balance", 0))
+            return_value = ""
         row = [
             t.get("date", ""),
             t.get("product", ""),
             format_number(qty) if qty else "",
             format_number(unit_price) if unit_price != "" else "",
-            format_number(t.get("balance", ""))
+            purchase_value,
+            return_value
         ]
         table_data.append(row)
 
-    totals_row = ["TOTAL", "", format_number(total_quantity), format_number(total_credit), ""]
+    # Totals row
+    totals_row = ["TOTAL", "", format_number(total_quantity), "", format_number(total_purchase), format_number(total_return)]
     table_data.append(totals_row)
 
     doc = SimpleDocTemplate(filename, pagesize=letter)
@@ -505,7 +519,8 @@ def create_pdf(transactions, filename):
     company_header = Paragraph("HANIF PACKAGES (PVT) LTD.<br/>PURE GOLD", big_header_style)
     elements.append(company_header)
 
-    col_widths = [80, 150, 80, 80, 80]
+    # Adjusted column widths for six columns
+    col_widths = [80, 150, 80, 80, 80, 80]
     trans_table = Table(table_data, colWidths=col_widths)
     table_style = TableStyle([
         ('GRID', (0,0), (-1,-1), 0.5, colors.black),
@@ -513,15 +528,16 @@ def create_pdf(transactions, filename):
         ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
         ('ALIGN', (0,0), (-1,0), 'CENTER'),
         ('ALIGN', (0,1), (-1,-2), 'CENTER'),
-        ('ALIGN', (2,1), (4,-2), 'RIGHT'),
-        ('ALIGN', (2,-1), (3,-1), 'RIGHT'),
+        ('ALIGN', (2,1), (3,-2), 'RIGHT'),
+        ('ALIGN', (4,1), (5,-2), 'RIGHT'),
+        ('ALIGN', (2,-1), (5,-1), 'RIGHT'),
         ('SPAN', (0, len(table_data)-1), (1, len(table_data)-1))
     ])
     trans_table.setStyle(table_style)
     elements.append(trans_table)
     elements.append(Spacer(1, 12))
 
-    footer = Paragraph("DATE   PRODUCT   QUANTITY   UNITY-PRICE   TOTAL-PURCHASE", styles["Normal"])
+    footer = Paragraph("DATE   PRODUCT   QUANTITY   UNITY-PRICE   PURCHASE   RETURN", styles["Normal"])
     elements.append(footer)
 
     doc.build(elements)
@@ -637,10 +653,34 @@ def create_invoice_pdf(invoice, output_filename="invoice.pdf"):
     elements.append(line_items_table)
     elements.append(Spacer(1, 0.5*cm))
 
+    # Sale Returns Section (if available)
+    if invoice.get("returns"):
+        elements.append(Paragraph("Sale Returns", style_subheading))
+        return_data = [[
+            Paragraph("<b>Return Date</b>", style_normal),
+            Paragraph("<b>Quantity</b>", style_normal),
+            Paragraph("<b>Unit Price</b>", style_normal),
+            Paragraph("<b>Refund Amount</b>", style_normal)
+        ]]
+        for ret in invoice["returns"]:
+            return_data.append([
+                ret.get("return_date", ""),
+                str(ret.get("quantity", "")),
+                f"{ret.get('unit_price', 0):.2f}",
+                f"{ret.get('refund_amount', 0):.2f}"
+            ])
+        returns_table = Table(return_data, colWidths=[3*cm, 2*cm, 2*cm, 3*cm])
+        returns_table.setStyle(TableStyle([
+            ("GRID", (0, 0), (-1, -1), 0.25, colors.black),
+            ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
+            ("ALIGN", (0, 0), (-1, 0), "CENTER"),
+            ("ALIGN", (0, 1), (-1, -1), "CENTER"),
+        ]))
+        elements.append(returns_table)
+        elements.append(Spacer(1, 0.5*cm))
+
     # Totals Section
     totals_data = [
-        # ["Total Value Excl. Tax:", f"{invoice['total_value_excl_tax']:.2f}"],
-        # ["Total Sales Tax:", f"{invoice['total_sales_tax']:.2f}"],
         ["Total Value:", f"{invoice['total_value_incl_tax']:.2f}"],
     ]
     totals_table = Table(totals_data, colWidths=[6*cm, 3*cm])
@@ -698,6 +738,26 @@ def generate_invoice_pdf(sale_id):
             "total_value_incl_tax": sale["total_sale"],
             "footer_note": "Signature for HANIF PACKAGES (PVT) LTD: █________________________________________█"
         }
+
+        # --- NEW CODE: Add sale returns information ---
+        try:
+            sale_date_obj = datetime.strptime(sale["sale_date"], "%Y-%m-%d")
+        except Exception as e:
+            sale_date_obj = None
+
+        returns = []
+        if sale_date_obj:
+            for ret in sale_return_records:
+                if ret.get("product_name", "").strip().lower() == sale["product_name"].strip().lower():
+                    try:
+                        ret_date = datetime.strptime(ret.get("return_date", ""), "%Y-%m-%d")
+                        if ret_date >= sale_date_obj:
+                            returns.append(ret)
+                    except Exception:
+                        continue
+        invoice["returns"] = returns
+        # --- END NEW CODE ---
+
         pdf_path = os.path.join(BASE_DIR, f"invoice_{sale_id}.pdf")
         create_invoice_pdf(invoice, pdf_path)
         app.logger.info("Invoice PDF generated for sale_id %s using create_invoice_pdf", sale_id)
