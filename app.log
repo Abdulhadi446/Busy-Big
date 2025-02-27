@@ -651,3 +651,417 @@
 2025-02-27 00:36:46,267 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
 2025-02-27 00:36:46,270 INFO: Supplier ledger PDF generated for supplier Umair
 2025-02-27 00:36:46,301 INFO: 127.0.0.1 - - [27/Feb/2025 00:36:46] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 01:39:35,179 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 01:39:35,335 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 01:39:35,335 INFO: [33mPress CTRL+C to quit[0m
+2025-02-27 01:39:35,339 INFO:  * Restarting with stat
+2025-02-27 01:39:36,123 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 01:39:36,166 WARNING:  * Debugger is active!
+2025-02-27 01:39:36,181 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 01:39:43,528 INFO: Request: GET / from 127.0.0.1
+2025-02-27 01:39:43,555 INFO: 127.0.0.1 - - [27/Feb/2025 01:39:43] "GET / HTTP/1.1" 200 -
+2025-02-27 01:39:43,629 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 01:39:43,940 INFO: 127.0.0.1 - - [27/Feb/2025 01:39:43] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 01:39:47,111 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 01:39:47,113 INFO: 127.0.0.1 - - [27/Feb/2025 01:39:47] "[33mGET /supplier-ledger HTTP/1.1[0m" 404 -
+2025-02-27 01:39:50,978 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 01:39:50,978 INFO: 127.0.0.1 - - [27/Feb/2025 01:39:50] "[33mGET /supplier-ledger HTTP/1.1[0m" 404 -
+2025-02-27 01:41:26,594 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 01:41:35,101 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 01:41:35,164 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 01:41:35,164 INFO: [33mPress CTRL+C to quit[0m
+2025-02-27 01:41:35,166 INFO:  * Restarting with stat
+2025-02-27 01:41:35,959 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 01:41:36,021 WARNING:  * Debugger is active!
+2025-02-27 01:41:36,041 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 01:41:37,650 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 01:41:38,155 INFO: Supplier ledger generated
+2025-02-27 01:41:38,591 INFO: 127.0.0.1 - - [27/Feb/2025 01:41:38] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-27 01:41:38,697 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 01:41:38,866 INFO: 127.0.0.1 - - [27/Feb/2025 01:41:38] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 01:41:44,155 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-27 01:41:44,196 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-27 01:41:44,247 INFO: 127.0.0.1 - - [27/Feb/2025 01:41:44] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 01:43:48,292 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 01:43:48,374 INFO:  * Restarting with stat
+2025-02-27 01:43:49,169 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 01:43:49,207 WARNING:  * Debugger is active!
+2025-02-27 01:43:49,217 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 01:43:51,068 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-27 01:43:51,084 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-27 01:43:51,327 INFO: 127.0.0.1 - - [27/Feb/2025 01:43:51] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 01:44:50,929 INFO: Request: GET / from 127.0.0.1
+2025-02-27 01:44:50,961 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:50] "GET / HTTP/1.1" 200 -
+2025-02-27 01:44:51,006 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 01:44:51,007 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 01:44:53,713 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 01:44:53,720 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:53] "GET /sale HTTP/1.1" 200 -
+2025-02-27 01:44:54,164 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 01:44:54,165 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 01:44:57,908 INFO: Request: GET / from 127.0.0.1
+2025-02-27 01:44:57,908 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:57] "GET / HTTP/1.1" 200 -
+2025-02-27 01:44:57,947 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 01:44:57,950 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 01:44:59,360 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 01:44:59,360 INFO: Generating invoice for sale_id 0
+2025-02-27 01:44:59,366 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:59] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 01:44:59,635 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 01:44:59,636 INFO: 127.0.0.1 - - [27/Feb/2025 01:44:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:00:01,535 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:00:01,674 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 02:00:01,674 INFO: [33mPress CTRL+C to quit[0m
+2025-02-27 02:00:01,678 INFO:  * Restarting with stat
+2025-02-27 02:00:02,255 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:00:02,288 WARNING:  * Debugger is active!
+2025-02-27 02:00:02,304 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:00:12,274 INFO: Request: GET / from 127.0.0.1
+2025-02-27 02:00:12,304 INFO: 127.0.0.1 - - [27/Feb/2025 02:00:12] "GET / HTTP/1.1" 200 -
+2025-02-27 02:00:12,408 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:00:12,734 INFO: 127.0.0.1 - - [27/Feb/2025 02:00:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:00:14,879 INFO: Request: GET / from 127.0.0.1
+2025-02-27 02:00:14,880 INFO: 127.0.0.1 - - [27/Feb/2025 02:00:14] "GET / HTTP/1.1" 200 -
+2025-02-27 02:00:14,902 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:00:14,903 INFO: 127.0.0.1 - - [27/Feb/2025 02:00:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:00:16,629 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:00:16,629 INFO: 127.0.0.1 - - [27/Feb/2025 02:00:16] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:00:20,284 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:00:20,285 INFO: 127.0.0.1 - - [27/Feb/2025 02:00:20] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:02:35,444 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 02:02:35,649 INFO:  * Restarting with stat
+2025-02-27 02:02:36,452 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:02:36,493 WARNING:  * Debugger is active!
+2025-02-27 02:02:36,509 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:02:39,079 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:02:39,080 INFO: 127.0.0.1 - - [27/Feb/2025 02:02:39] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:02:49,389 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:02:49,461 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 02:02:49,461 INFO: [33mPress CTRL+C to quit[0m
+2025-02-27 02:02:49,465 INFO:  * Restarting with stat
+2025-02-27 02:02:50,666 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:02:50,726 WARNING:  * Debugger is active!
+2025-02-27 02:02:50,744 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:02:53,106 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:02:53,107 INFO: 127.0.0.1 - - [27/Feb/2025 02:02:53] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:02:55,108 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:02:55,109 INFO: 127.0.0.1 - - [27/Feb/2025 02:02:55] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:02:55,532 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:02:55,533 INFO: 127.0.0.1 - - [27/Feb/2025 02:02:55] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:02:55,804 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:02:55,805 INFO: 127.0.0.1 - - [27/Feb/2025 02:02:55] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:02:59,427 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:02:59,427 INFO: 127.0.0.1 - - [27/Feb/2025 02:02:59] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:03:18,678 INFO: Request: GET /0/pdf from 127.0.0.1
+2025-02-27 02:03:18,678 INFO: 127.0.0.1 - - [27/Feb/2025 02:03:18] "[33mGET /0/pdf HTTP/1.1[0m" 404 -
+2025-02-27 02:03:21,620 INFO: Request: GET /0/pdf from 127.0.0.1
+2025-02-27 02:03:21,620 INFO: 127.0.0.1 - - [27/Feb/2025 02:03:21] "[33mGET /0/pdf HTTP/1.1[0m" 404 -
+2025-02-27 02:03:28,213 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:03:28,213 INFO: 127.0.0.1 - - [27/Feb/2025 02:03:28] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:04:06,392 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 02:04:06,423 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 02:04:06,634 INFO: 127.0.0.1 - - [27/Feb/2025 02:04:06] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 02:04:21,808 INFO: Request: GET /invoice from 127.0.0.1
+2025-02-27 02:04:21,809 INFO: 127.0.0.1 - - [27/Feb/2025 02:04:21] "[33mGET /invoice HTTP/1.1[0m" 404 -
+2025-02-27 02:04:24,794 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:04:24,794 INFO: 127.0.0.1 - - [27/Feb/2025 02:04:24] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:05:25,117 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:05:25,117 INFO: 127.0.0.1 - - [27/Feb/2025 02:05:25] "[33mGET /invoice/0 HTTP/1.1[0m" 404 -
+2025-02-27 02:06:50,921 INFO:  * Detected change in 'e:\\Busy Big\\.py', reloading
+2025-02-27 02:06:51,094 INFO:  * Restarting with stat
+2025-02-27 02:06:52,282 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:06:52,343 WARNING:  * Debugger is active!
+2025-02-27 02:06:52,356 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:07:17,959 INFO:  * Detected change in 'e:\\Busy Big\\.py', reloading
+2025-02-27 02:07:18,044 INFO:  * Restarting with stat
+2025-02-27 02:07:18,750 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:07:18,785 WARNING:  * Debugger is active!
+2025-02-27 02:07:18,795 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:07:42,921 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 02:07:42,998 INFO:  * Restarting with stat
+2025-02-27 02:07:43,817 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:07:43,857 WARNING:  * Debugger is active!
+2025-02-27 02:07:43,872 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:07:47,014 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:07:47,014 INFO: Generating invoice for sale_id 0
+2025-02-27 02:07:47,030 INFO: 127.0.0.1 - - [27/Feb/2025 02:07:47] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 02:07:47,058 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:07:47,291 INFO: 127.0.0.1 - - [27/Feb/2025 02:07:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:07:50,455 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 02:07:50,475 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 02:07:50,507 INFO: 127.0.0.1 - - [27/Feb/2025 02:07:50] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 02:10:26,978 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:10:26,978 INFO: Generating invoice for sale_id 0
+2025-02-27 02:10:26,979 INFO: 127.0.0.1 - - [27/Feb/2025 02:10:26] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 02:10:27,014 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:10:27,016 INFO: 127.0.0.1 - - [27/Feb/2025 02:10:27] "GET /static/styles.css HTTP/1.1" 200 -
+2025-02-27 02:10:47,005 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:10:47,005 INFO: Generating invoice for sale_id 0
+2025-02-27 02:10:47,005 INFO: 127.0.0.1 - - [27/Feb/2025 02:10:47] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 02:10:47,037 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:10:47,039 INFO: 127.0.0.1 - - [27/Feb/2025 02:10:47] "GET /static/styles.css HTTP/1.1" 200 -
+2025-02-27 02:11:22,568 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:11:22,568 INFO: Generating invoice for sale_id 0
+2025-02-27 02:11:22,569 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:22] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 02:11:22,592 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:22,594 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:22] "GET /static/styles.css HTTP/1.1" 200 -
+2025-02-27 02:11:25,387 INFO: Request: GET / from 127.0.0.1
+2025-02-27 02:11:25,392 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:25] "GET / HTTP/1.1" 200 -
+2025-02-27 02:11:25,427 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:25,429 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:11:27,263 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 02:11:27,272 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:27] "GET /sale HTTP/1.1" 200 -
+2025-02-27 02:11:27,311 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:27,313 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:11:28,428 INFO: Request: GET /purchase from 127.0.0.1
+2025-02-27 02:11:28,443 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:28] "GET /purchase HTTP/1.1" 200 -
+2025-02-27 02:11:28,855 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:28,856 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:11:29,831 INFO: Request: GET /sale-return from 127.0.0.1
+2025-02-27 02:11:29,839 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:29] "GET /sale-return HTTP/1.1" 200 -
+2025-02-27 02:11:30,109 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:30,112 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:11:31,134 INFO: Request: GET /purchase-return from 127.0.0.1
+2025-02-27 02:11:31,140 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:31] "GET /purchase-return HTTP/1.1" 200 -
+2025-02-27 02:11:31,402 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:31,403 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:11:32,361 INFO: Request: GET /profit from 127.0.0.1
+2025-02-27 02:11:32,362 INFO: Profit calculated: {'total_sales': 1600.0, 'total_sale_returns': 0, 'net_sales': 1600.0, 'total_purchases': 2900.0, 'total_purchase_returns': 0, 'net_purchases': 2900.0, 'gross_profit': -1300.0, 'operating_expenses': 0.0, 'net_profit': -1300.0}
+2025-02-27 02:11:32,368 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:32] "GET /profit HTTP/1.1" 200 -
+2025-02-27 02:11:32,589 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:32,591 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:32] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:11:48,932 INFO: Request: GET /profit from 127.0.0.1
+2025-02-27 02:11:48,933 INFO: Profit calculated: {'total_sales': 1600.0, 'total_sale_returns': 0, 'net_sales': 1600.0, 'total_purchases': 2900.0, 'total_purchase_returns': 0, 'net_purchases': 2900.0, 'gross_profit': -1300.0, 'operating_expenses': 0.0, 'net_profit': -1300.0}
+2025-02-27 02:11:48,933 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:48] "GET /profit HTTP/1.1" 200 -
+2025-02-27 02:11:48,957 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:48,959 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:48] "GET /static/styles.css HTTP/1.1" 200 -
+2025-02-27 02:11:50,184 INFO: Request: GET / from 127.0.0.1
+2025-02-27 02:11:50,185 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:50] "GET / HTTP/1.1" 200 -
+2025-02-27 02:11:50,230 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:11:50,232 INFO: 127.0.0.1 - - [27/Feb/2025 02:11:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:40,293 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 02:12:40,593 INFO:  * Restarting with stat
+2025-02-27 02:12:44,265 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 02:12:44,363 WARNING:  * Debugger is active!
+2025-02-27 02:12:44,382 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 02:12:46,495 INFO: Request: GET / from 127.0.0.1
+2025-02-27 02:12:46,499 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 02:12:46,512 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:46] "GET / HTTP/1.1" 200 -
+2025-02-27 02:12:46,514 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:46] "GET /sale HTTP/1.1" 200 -
+2025-02-27 02:12:46,554 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:46,809 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:47,576 INFO: Request: GET /purchase from 127.0.0.1
+2025-02-27 02:12:47,582 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:47] "GET /purchase HTTP/1.1" 200 -
+2025-02-27 02:12:47,625 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:47,626 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:47] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:48,415 INFO: Request: GET /sale-return from 127.0.0.1
+2025-02-27 02:12:48,423 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:48] "GET /sale-return HTTP/1.1" 200 -
+2025-02-27 02:12:48,458 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:48,459 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:48] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:49,053 INFO: Request: GET /purchase-return from 127.0.0.1
+2025-02-27 02:12:49,060 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:49] "GET /purchase-return HTTP/1.1" 200 -
+2025-02-27 02:12:49,106 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:49,107 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:49,699 INFO: Request: GET /profit from 127.0.0.1
+2025-02-27 02:12:49,699 INFO: Profit calculated: {'total_sales': 1600.0, 'total_sale_returns': 0, 'net_sales': 1600.0, 'total_purchases': 2900.0, 'total_purchase_returns': 0, 'net_purchases': 2900.0, 'gross_profit': -1300.0, 'operating_expenses': 0.0, 'net_profit': -1300.0}
+2025-02-27 02:12:49,707 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:49] "GET /profit HTTP/1.1" 200 -
+2025-02-27 02:12:49,737 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:49,738 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:50,270 INFO: Request: GET /cash-flow from 127.0.0.1
+2025-02-27 02:12:50,270 INFO: Cash flow calculated: {'opening_balance': 0.0, 'cash_inflow': 1600.0, 'cash_outflow': 2900.0, 'additional_outflow': 0.0, 'closing_balance': -1300.0}
+2025-02-27 02:12:50,276 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:50] "GET /cash-flow HTTP/1.1" 200 -
+2025-02-27 02:12:51,034 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:51,036 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:51,881 INFO: Request: GET /cash-flow-report from 127.0.0.1
+2025-02-27 02:12:51,917 INFO: Cash flow report generated: Daily: [{'date': '2025-02-25', 'inflow': 0, 'outflow': 1000.0, 'net': -1000.0}, {'date': '2025-02-26', 'inflow': 1600.0, 'outflow': 1800.0, 'net': -200.0}, {'date': '2025-02-27', 'inflow': 0, 'outflow': 100.0, 'net': -100.0}], Weekly: [{'week': '2025-W9', 'inflow': 1600.0, 'outflow': 2900.0, 'net': -1300.0}]
+2025-02-27 02:12:51,928 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:51] "GET /cash-flow-report HTTP/1.1" 200 -
+2025-02-27 02:12:52,156 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:52,157 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:52,848 INFO: Request: GET /inventory from 127.0.0.1
+2025-02-27 02:12:52,848 INFO: Inventory report generated
+2025-02-27 02:12:52,858 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:52] "GET /inventory HTTP/1.1" 200 -
+2025-02-27 02:12:53,125 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:53,126 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:53,850 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 02:12:53,850 INFO: Supplier ledger generated
+2025-02-27 02:12:53,868 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:53] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-27 02:12:53,904 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:12:53,905 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:12:55,689 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-27 02:12:55,710 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-27 02:12:55,760 INFO: 127.0.0.1 - - [27/Feb/2025 02:12:55] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 02:13:03,742 INFO: Request: GET /supplier-ledger/pdf from 127.0.0.1
+2025-02-27 02:13:03,746 INFO: Aggregated Supplier ledger PDF generated
+2025-02-27 02:13:03,781 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:03] "GET /supplier-ledger/pdf HTTP/1.1" 200 -
+2025-02-27 02:13:14,748 INFO: Request: GET /cash-flow-report from 127.0.0.1
+2025-02-27 02:13:14,748 INFO: Cash flow report generated: Daily: [{'date': '2025-02-25', 'inflow': 0, 'outflow': 1000.0, 'net': -1000.0}, {'date': '2025-02-26', 'inflow': 1600.0, 'outflow': 1800.0, 'net': -200.0}, {'date': '2025-02-27', 'inflow': 0, 'outflow': 100.0, 'net': -100.0}], Weekly: [{'week': '2025-W9', 'inflow': 1600.0, 'outflow': 2900.0, 'net': -1300.0}]
+2025-02-27 02:13:14,750 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:14] "GET /cash-flow-report HTTP/1.1" 200 -
+2025-02-27 02:13:14,777 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:13:14,779 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:13:16,688 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 02:13:16,689 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:16] "GET /sale HTTP/1.1" 200 -
+2025-02-27 02:13:16,735 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:13:16,736 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:13:17,608 INFO: Request: GET / from 127.0.0.1
+2025-02-27 02:13:17,609 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:17] "GET / HTTP/1.1" 200 -
+2025-02-27 02:13:17,654 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:13:17,655 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:13:19,655 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 02:13:19,655 INFO: Generating invoice for sale_id 0
+2025-02-27 02:13:19,662 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:19] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 02:13:19,706 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 02:13:19,707 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 02:13:21,011 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 02:13:21,027 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 02:13:21,063 INFO: 127.0.0.1 - - [27/Feb/2025 02:13:21] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:06:11,314 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:06:11,562 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-27 21:06:11,562 INFO: [33mPress CTRL+C to quit[0m
+2025-02-27 21:06:11,573 INFO:  * Restarting with stat
+2025-02-27 21:06:12,182 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:06:12,219 WARNING:  * Debugger is active!
+2025-02-27 21:06:12,233 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:06:27,900 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:06:27,988 INFO: 127.0.0.1 - - [27/Feb/2025 21:06:27] "GET / HTTP/1.1" 200 -
+2025-02-27 21:06:28,102 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:06:28,318 INFO: 127.0.0.1 - - [27/Feb/2025 21:06:28] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:06:33,465 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 21:06:33,465 INFO: Generating invoice for sale_id 0
+2025-02-27 21:06:33,500 INFO: 127.0.0.1 - - [27/Feb/2025 21:06:33] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 21:06:33,904 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:06:33,906 INFO: 127.0.0.1 - - [27/Feb/2025 21:06:33] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:06:34,902 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:06:34,920 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:06:34,951 INFO: 127.0.0.1 - - [27/Feb/2025 21:06:34] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:07:22,543 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:07:22,628 INFO:  * Restarting with stat
+2025-02-27 21:07:23,249 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:07:23,288 WARNING:  * Debugger is active!
+2025-02-27 21:07:23,299 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:07:32,283 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:07:32,367 INFO:  * Restarting with stat
+2025-02-27 21:07:32,940 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:07:32,975 WARNING:  * Debugger is active!
+2025-02-27 21:07:32,984 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:07:54,750 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:07:54,814 INFO:  * Restarting with stat
+2025-02-27 21:07:55,399 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:07:55,434 WARNING:  * Debugger is active!
+2025-02-27 21:07:55,444 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:08:11,673 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:08:11,689 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:08:11,873 INFO: 127.0.0.1 - - [27/Feb/2025 21:08:11] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:08:36,728 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:08:36,903 INFO:  * Restarting with stat
+2025-02-27 21:08:38,348 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:08:38,397 WARNING:  * Debugger is active!
+2025-02-27 21:08:38,411 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:08:41,293 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:08:41,304 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:08:41,454 INFO: 127.0.0.1 - - [27/Feb/2025 21:08:41] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:09:04,039 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:09:04,108 INFO:  * Restarting with stat
+2025-02-27 21:09:04,684 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:09:04,721 WARNING:  * Debugger is active!
+2025-02-27 21:09:04,733 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:09:52,577 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:09:52,684 INFO:  * Restarting with stat
+2025-02-27 21:09:53,494 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:09:53,563 WARNING:  * Debugger is active!
+2025-02-27 21:09:53,576 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:10:04,626 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:10:04,734 INFO:  * Restarting with stat
+2025-02-27 21:10:05,523 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:10:05,571 WARNING:  * Debugger is active!
+2025-02-27 21:10:05,591 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:10:07,379 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:10:07,388 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:10:07,572 INFO: 127.0.0.1 - - [27/Feb/2025 21:10:07] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:10:36,090 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:10:36,162 INFO:  * Restarting with stat
+2025-02-27 21:10:36,773 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:10:36,808 WARNING:  * Debugger is active!
+2025-02-27 21:10:36,817 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:10:49,662 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:10:49,728 INFO:  * Restarting with stat
+2025-02-27 21:10:50,502 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:10:50,544 WARNING:  * Debugger is active!
+2025-02-27 21:10:50,554 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:11:17,037 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:11:17,105 INFO:  * Restarting with stat
+2025-02-27 21:11:17,869 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:11:17,916 WARNING:  * Debugger is active!
+2025-02-27 21:11:17,926 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:11:22,406 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:11:22,421 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:11:22,587 INFO: 127.0.0.1 - - [27/Feb/2025 21:11:22] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:11:35,424 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:11:35,499 INFO:  * Restarting with stat
+2025-02-27 21:11:36,119 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:11:36,153 WARNING:  * Debugger is active!
+2025-02-27 21:11:36,162 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:11:52,944 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:11:52,958 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:11:53,179 INFO: 127.0.0.1 - - [27/Feb/2025 21:11:53] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:13:19,367 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:13:19,431 INFO:  * Restarting with stat
+2025-02-27 21:13:20,011 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:13:20,046 WARNING:  * Debugger is active!
+2025-02-27 21:13:20,056 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:13:40,362 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:13:40,443 INFO:  * Restarting with stat
+2025-02-27 21:13:41,056 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:13:41,095 WARNING:  * Debugger is active!
+2025-02-27 21:13:41,106 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:13:56,602 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:13:56,681 INFO:  * Restarting with stat
+2025-02-27 21:13:57,507 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:13:57,556 WARNING:  * Debugger is active!
+2025-02-27 21:13:57,566 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:14:05,531 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:14:05,549 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:14:05,736 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:05] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:14:36,957 INFO: Request: GET / from 127.0.0.1
+2025-02-27 21:14:36,978 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:36] "GET / HTTP/1.1" 200 -
+2025-02-27 21:14:37,013 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:14:37,015 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:37] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:14:37,895 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:14:37,930 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:37] "GET /sale HTTP/1.1" 200 -
+2025-02-27 21:14:57,772 INFO: Request: GET /invoice/0 from 127.0.0.1
+2025-02-27 21:14:57,772 INFO: Generating invoice for sale_id 0
+2025-02-27 21:14:57,779 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:57] "GET /invoice/0 HTTP/1.1" 200 -
+2025-02-27 21:14:57,821 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:14:57,821 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:14:58,820 INFO: Request: GET /invoice/0/pdf from 127.0.0.1
+2025-02-27 21:14:58,839 INFO: Invoice PDF generated for sale_id 0 using create_invoice_pdf
+2025-02-27 21:14:58,859 INFO: 127.0.0.1 - - [27/Feb/2025 21:14:58] "GET /invoice/0/pdf HTTP/1.1" 200 -
+2025-02-27 21:15:00,887 INFO: Request: GET /supplier-ledger from 127.0.0.1
+2025-02-27 21:15:00,887 INFO: Supplier ledger generated
+2025-02-27 21:15:00,918 INFO: 127.0.0.1 - - [27/Feb/2025 21:15:00] "GET /supplier-ledger HTTP/1.1" 200 -
+2025-02-27 21:15:01,127 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:15:01,128 INFO: 127.0.0.1 - - [27/Feb/2025 21:15:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:15:06,057 INFO: Request: GET /supplier-ledger/Umair/pdf from 127.0.0.1
+2025-02-27 21:15:06,085 INFO: Supplier ledger PDF generated for supplier Umair using create_pdf
+2025-02-27 21:15:06,105 INFO: 127.0.0.1 - - [27/Feb/2025 21:15:06] "GET /supplier-ledger/Umair/pdf HTTP/1.1" 200 -
+2025-02-27 21:18:27,468 INFO: Request: GET /sale from 127.0.0.1
+2025-02-27 21:18:27,469 INFO: 127.0.0.1 - - [27/Feb/2025 21:18:27] "GET /sale HTTP/1.1" 200 -
+2025-02-27 21:18:27,511 INFO: Request: GET /static/styles.css from 127.0.0.1
+2025-02-27 21:18:27,513 INFO: 127.0.0.1 - - [27/Feb/2025 21:18:27] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2025-02-27 21:18:41,391 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:18:41,471 INFO:  * Restarting with stat
+2025-02-27 21:18:42,071 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:18:42,108 WARNING:  * Debugger is active!
+2025-02-27 21:18:42,117 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:19:39,012 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:19:39,074 INFO:  * Restarting with stat
+2025-02-27 21:19:39,636 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:19:39,670 WARNING:  * Debugger is active!
+2025-02-27 21:19:39,679 INFO:  * Debugger PIN: 169-371-690
+2025-02-27 21:20:08,461 INFO:  * Detected change in 'e:\\Busy Big\\app.py', reloading
+2025-02-27 21:20:08,563 INFO:  * Restarting with stat
+2025-02-27 21:20:09,236 INFO: Data loaded from e:\Busy Big\data.json
+2025-02-27 21:20:09,272 WARNING:  * Debugger is active!
+2025-02-27 21:20:09,282 INFO:  * Debugger PIN: 169-371-690

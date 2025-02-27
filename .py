@@ -3,19 +3,20 @@ import json
 import logging
 from datetime import datetime
 from flask import Flask, render_template, request, send_file
-from reportlab.lib.pagesizes import letter, A4
+from reportlab.lib.pagesizes import letter
 from reportlab.pdfgen import canvas
+
+# New imports for PDF generation using Platypus
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
-from reportlab.lib.units import cm
 
 app = Flask(__name__)
 
-# Define the base directory where the script resides.
+# Set the base directory to the directory where this script resides.
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-# Configure logging – the log file will be saved in the same directory.
+# Configure logging to store the log file in the same directory.
 LOG_FILE = os.path.join(BASE_DIR, 'app.log')
 logging.basicConfig(
     level=logging.INFO,
@@ -28,11 +29,11 @@ logging.basicConfig(
 def log_request():
     app.logger.info("Request: %s %s from %s", request.method, request.path, request.remote_addr)
 
-# Set the data file path relative to BASE_DIR.
+# Set the data file path to the same directory.
 DATA_FILE = os.path.join(BASE_DIR, 'data.json')
 
 def load_data():
-    """Load all records from the JSON file. If not found, initialize empty data."""
+    """Load all records from the JSON file. If not found, return empty lists."""
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, 'r') as f:
             data = json.load(f)
@@ -53,7 +54,7 @@ def load_data():
         }
 
 def save_data():
-    """Save the current records to the JSON file."""
+    """Save the global record lists to the JSON file."""
     data = {
         "sales_records": sales_records,
         "purchase_records": purchase_records,
@@ -64,7 +65,7 @@ def save_data():
         json.dump(data, f, indent=4)
     app.logger.info("Data saved to %s", DATA_FILE)
 
-# Load data when the app starts.
+# Load data on startup
 data = load_data()
 sales_records = data["sales_records"]
 purchase_records = data["purchase_records"]
@@ -459,25 +460,41 @@ def supplier_ledger_pdf():
     app.logger.info("Aggregated Supplier ledger PDF generated")
     return send_file(pdf_path, as_attachment=True)
 
-# ---------------- Supplier Ledger PDF for a Separate Supplier ----------------
+# ---------------- Supplier Ledger PDF for Separate Supplier Using create_pdf ----------------
 def format_number(n):
     """Format a number with commas (without decimals)."""
     return "{:,.0f}".format(n) if n else ""
 
 def create_pdf(transactions, filename):
     """
-    Creates a PDF with an Excel-like grid based on the transactions.
+    Creates a PDF file with an Excel-like grid based on the transactions array.
+    The PDF includes a large company header, a table with the transactions,
+    and a footer header row.
+    
+    Each transaction should be a dict with keys:
+      - date: string
+      - product: string
+      - quantity: numeric (0 if not applicable)
+      - balance: numeric
+      Optionally, a transaction may include:
+      - credit: numeric (if applicable)
     """
+    # Calculate totals
     total_quantity = sum(t.get("quantity", 0) for t in transactions)
     total_credit = sum(t.get("credit", 0) for t in transactions)
 
+    # Build table data for the Excel-like grid
     table_data = []
     header = ["DATE", "PRODUCT", "QUANTITY", "UNITY\nPRICE", "TOTAL\nPURCHASE"]
     table_data.append(header)
 
+    # Add transaction rows. If quantity is nonzero, calculate unit price.
     for t in transactions:
         qty = t.get("quantity", 0)
-        unit_price = int(t["balance"] / qty) if qty else ""
+        if qty:
+            unit_price = int(t["balance"] / qty)
+        else:
+            unit_price = ""
         row = [
             t.get("date", ""),
             t.get("product", ""),
@@ -487,24 +504,30 @@ def create_pdf(transactions, filename):
         ]
         table_data.append(row)
 
+    # Totals row: merge the first two cells for "TOTAL"
     totals_row = ["TOTAL", "", format_number(total_quantity), format_number(total_credit), ""]
     table_data.append(totals_row)
 
+    # Create the PDF document
     doc = SimpleDocTemplate(filename, pagesize=letter)
     styles = getSampleStyleSheet()
 
+    # Define a larger style for the company header
     big_header_style = ParagraphStyle(
         name="BigHeader",
         parent=styles["Title"],
         fontSize=18,
-        alignment=1,
+        alignment=1,  # Centered
         spaceAfter=20
     )
 
     elements = []
+
+    # 1. Add the company header at the top with a bigger font
     company_header = Paragraph("HANIF PACKAGES (PVT) LTD.<br/>PURE GOLD", big_header_style)
     elements.append(company_header)
 
+    # 2. Create the transactions table with an Excel-like grid
     col_widths = [80, 150, 80, 80, 80]
     trans_table = Table(table_data, colWidths=col_widths)
     table_style = TableStyle([
@@ -521,16 +544,24 @@ def create_pdf(transactions, filename):
     elements.append(trans_table)
     elements.append(Spacer(1, 12))
 
+    # 3. Add a footer header row for reference
     footer = Paragraph("DATE   PRODUCT   QUANTITY   UNITY-PRICE   TOTAL-PURCHASE", styles["Normal"])
     elements.append(footer)
 
+    # Build the PDF
     doc.build(elements)
     print(f"PDF generated successfully as {filename}")
 
 @app.route("/supplier-ledger/<supplier_name>/pdf")
 def supplier_ledger_supplier_pdf(supplier_name):
+    """
+    Generates a PDF ledger for a specific supplier using the create_pdf function.
+    It compiles purchase and purchase return transactions for the supplier,
+    sorts them by date, and then generates an Excel-like PDF ledger.
+    """
     supplier = supplier_name.strip()
     transactions = []
+    # Add purchase transactions
     for rec in purchase_records:
         if rec.get("supplier_name", "").strip().lower() == supplier.lower():
             transactions.append({
@@ -539,6 +570,7 @@ def supplier_ledger_supplier_pdf(supplier_name):
                 "quantity": rec.get("quantity", 0),
                 "balance": rec.get("total_purchase", 0)
             })
+    # Add purchase return transactions (as credits)
     for rec in purchase_return_records:
         if rec.get("supplier_name", "").strip().lower() == supplier.lower():
             transactions.append({
@@ -552,6 +584,7 @@ def supplier_ledger_supplier_pdf(supplier_name):
         app.logger.error("No ledger records found for supplier %s", supplier)
         return "No ledger records found for supplier", 404
 
+    # Optionally, sort transactions by date (assuming YYYY-MM-DD format)
     try:
         transactions.sort(key=lambda x: datetime.strptime(x["date"], "%Y-%m-%d"))
     except Exception as e:
@@ -562,109 +595,7 @@ def supplier_ledger_supplier_pdf(supplier_name):
     app.logger.info("Supplier ledger PDF generated for supplier %s using create_pdf", supplier)
     return send_file(pdf_path, as_attachment=True)
 
-# ---------------- Invoice Generation Using Platypus ----------------
-def create_invoice_pdf(invoice, output_filename="invoice.pdf"):
-    # Create a document template with A4 page size and margins.
-    doc = SimpleDocTemplate(
-        output_filename,
-        pagesize=A4,
-        rightMargin=1.5*cm,
-        leftMargin=1.5*cm,
-        topMargin=1.5*cm,
-        bottomMargin=1.5*cm
-    )
-
-    styles = getSampleStyleSheet()
-    style_normal = styles["Normal"]
-    style_heading = styles["Heading1"]
-    style_subheading = styles["Heading2"]
-
-    elements = []
-
-    # Header (Company Info, Invoice Title)
-    elements.append(Paragraph(f"<b>{invoice['company_name']}</b>", style_heading))
-    elements.append(Paragraph(f"<b>{invoice['invoice_title']}</b>", style_subheading))
-    elements.append(Spacer(1, 0.3*cm))
-
-    # Company contact info
-    company_info = Paragraph(
-        f"{invoice['company_address']}<br/>"
-        f"Tel: {invoice['company_tel']}<br/>"
-        f"Email: {invoice['company_email']}<br/>",
-        style_normal
-    )
-    elements.append(company_info)
-    elements.append(Spacer(1, 0.5*cm))
-
-    # Buyer Info & Invoice Meta
-    metadata_data = [
-        ["Buyer:", invoice["buyer_name"]],
-        ["Address:", invoice["buyer_address"]],
-        ["Serial No:", invoice["serial_no"]],
-        ["Date:", invoice["date"]],
-    ]
-    metadata_table = Table(metadata_data, colWidths=[3*cm, 9*cm])
-    metadata_table.setStyle(TableStyle([
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("FONTNAME", (0, 0), (-1, -1), "Helvetica"),
-        ("FONTSIZE", (0, 0), (-1, -1), 10),
-    ]))
-    elements.append(metadata_table)
-    elements.append(Spacer(1, 0.5*cm))
-
-    # Line Items Table
-    line_items_data = [[
-        Paragraph("<b>Quantity</b>", style_normal),
-        Paragraph("<b>Product</b>", style_normal),
-        Paragraph("<b>Unit Price</b>", style_normal),
-        Paragraph("<b>Value Excl. Tax</b>", style_normal),
-        Paragraph("<b>Sales Tax</b>", style_normal),
-        Paragraph("<b>Value Incl. Tax</b>", style_normal),
-    ]]
-    for item in invoice["line_items"]:
-        line_items_data.append([
-            str(item["quantity"]),
-            item["description"],
-            f"{item['unit_price']:.2f}",
-            f"{item['value_excl_tax']:.2f}",
-            f"{item['sales_tax']:.2f}",
-            f"{item['value_incl_tax']:.2f}",
-        ])
-    line_items_table = Table(line_items_data, colWidths=[2*cm, 5*cm, 2*cm, 3*cm, 3*cm, 3*cm])
-    line_items_table.setStyle(TableStyle([
-        ("GRID", (0, 0), (-1, -1), 0.25, colors.black),
-        ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("FONTNAME", (0, 0), (-1, -1), "Helvetica"),
-        ("FONTSIZE", (0, 0), (-1, -1), 9),
-    ]))
-    elements.append(line_items_table)
-    elements.append(Spacer(1, 0.5*cm))
-
-    # Totals Section
-    totals_data = [
-        ["Total Value Excl. Tax:", f"{invoice['total_value_excl_tax']:.2f}"],
-        ["Total Sales Tax:", f"{invoice['total_sales_tax']:.2f}"],
-        ["Total Value Incl. Tax:", f"{invoice['total_value_incl_tax']:.2f}"],
-    ]
-    totals_table = Table(totals_data, colWidths=[6*cm, 3*cm])
-    totals_table.setStyle(TableStyle([
-        ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("FONTNAME", (0, 0), (-1, -1), "Helvetica-Bold"),
-        ("FONTSIZE", (0, 0), (-1, -1), 10),
-        ("ALIGN", (0, 0), (0, -1), "RIGHT"),
-        ("ALIGN", (1, 0), (1, -1), "RIGHT"),
-    ]))
-    elements.append(totals_table)
-    elements.append(Spacer(1, 1*cm))
-
-    # Footer Note
-    if invoice.get("footer_note"):
-        elements.append(Paragraph(invoice["footer_note"], style_normal))
-
-    doc.build(elements)
-    print(f"Invoice PDF generated: {output_filename}")
-
+# ---------------- Invoice Generation ----------------
 @app.route("/invoice/<int:sale_id>")
 def invoice(sale_id):
     if 0 <= sale_id < len(sales_records):
@@ -678,42 +609,23 @@ def invoice(sale_id):
 def generate_invoice_pdf(sale_id):
     if 0 <= sale_id < len(sales_records):
         sale = sales_records[sale_id]
-        # Build the invoice dictionary based on the sale record.
-        invoice = {
-            "company_name": "HANIF PACKAGES (PVT) LTD. PURE GOLD",
-            "invoice_title": "INVOICE",
-            "company_address": "1234 Main St, City, Country",
-            "company_tel": "+1-234-567-8900",
-            "company_email": "info@hanifpackages.com",
-            "buyer_name": "Valued Customer",
-            "buyer_address": "Customer Address",
-            "serial_no": str(sale_id),
-            "date": sale["sale_date"],
-            "line_items": [
-                {
-                    "quantity": sale["quantity"],
-                    "description": sale["product_name"],
-                    "unit_price": sale["unit_price"],
-                    "value_excl_tax": sale["unit_price"] * sale["quantity"],
-                    "sales_tax": 0.00,
-                    "value_incl_tax": sale["total_sale"]
-                }
-            ],
-            "total_value_excl_tax": sale["unit_price"] * sale["quantity"],
-            "total_sales_tax": 0.00,
-            "total_value_incl_tax": sale["total_sale"],
-            "footer_note": "Signature for HANIF PACKAGES (PVT) LTD: █________________________________________█"
-        }
         pdf_path = os.path.join(BASE_DIR, f"invoice_{sale_id}.pdf")
-        create_invoice_pdf(invoice, pdf_path)
-        app.logger.info("Invoice PDF generated for sale_id %s using create_invoice_pdf", sale_id)
+        c = canvas.Canvas(pdf_path, pagesize=letter)
+        c.setFont("Helvetica", 12)
+        c.drawString(100, 750, "INVOICE")
+        c.drawString(100, 730, f"Invoice ID: {sale_id}")
+        c.drawString(100, 710, f"Date: {sale['sale_date']}")
+        c.drawString(100, 690, f"Product: {sale['product_name']}")
+        c.drawString(100, 670, f"Quantity: {sale['quantity']}")
+        c.drawString(100, 650, f"Unit Price: {sale['unit_price']}")
+        c.drawString(100, 630, f"Total Amount: {sale['total_sale']}")
+        c.save()
+        app.logger.info("PDF invoice generated for sale_id %s", sale_id)
         return send_file(pdf_path, as_attachment=True)
     app.logger.error("Invoice PDF not found for sale_id %s", sale_id)
     return "Invoice not found", 404
 
 # ---------------- For Deployment ----------------
 if __name__ == "__main__":
+    # For local testing only; on PythonAnywhere, the WSGI server will import the application.
     app.run(debug=True)
-
-# Expose the WSGI callable for deployment.
-application = app
