@@ -43,5 +43,14 @@
         }
     ],
     "sale_return_records": [],
-    "purchase_return_records": []
+    "purchase_return_records": [
+        {
+            "supplier_name": "Umair",
+            "product_name": "silk",
+            "return_date": "2025-02-27",
+            "unit_price": 2.0,
+            "quantity": 25.0,
+            "total_return": 50.0
+        }
+    ]
 }

@@ -617,9 +617,7 @@ def create_invoice_pdf(invoice, output_filename="invoice.pdf"):
         Paragraph("<b>Quantity</b>", style_normal),
         Paragraph("<b>Product</b>", style_normal),
         Paragraph("<b>Unit Price</b>", style_normal),
-        Paragraph("<b>Value Excl. Tax</b>", style_normal),
-        Paragraph("<b>Sales Tax</b>", style_normal),
-        Paragraph("<b>Value Incl. Tax</b>", style_normal),
+        Paragraph("<b>Value</b>", style_normal),
     ]]
     for item in invoice["line_items"]:
         line_items_data.append([
@@ -627,10 +625,8 @@ def create_invoice_pdf(invoice, output_filename="invoice.pdf"):
             item["description"],
             f"{item['unit_price']:.2f}",
             f"{item['value_excl_tax']:.2f}",
-            f"{item['sales_tax']:.2f}",
-            f"{item['value_incl_tax']:.2f}",
         ])
-    line_items_table = Table(line_items_data, colWidths=[2*cm, 5*cm, 2*cm, 3*cm, 3*cm, 3*cm])
+    line_items_table = Table(line_items_data, colWidths=[2*cm, 5*cm, 2*cm, 3*cm])
     line_items_table.setStyle(TableStyle([
         ("GRID", (0, 0), (-1, -1), 0.25, colors.black),
         ("BACKGROUND", (0, 0), (-1, 0), colors.lightgrey),
@@ -643,9 +639,9 @@ def create_invoice_pdf(invoice, output_filename="invoice.pdf"):
 
     # Totals Section
     totals_data = [
-        ["Total Value Excl. Tax:", f"{invoice['total_value_excl_tax']:.2f}"],
-        ["Total Sales Tax:", f"{invoice['total_sales_tax']:.2f}"],
-        ["Total Value Incl. Tax:", f"{invoice['total_value_incl_tax']:.2f}"],
+        # ["Total Value Excl. Tax:", f"{invoice['total_value_excl_tax']:.2f}"],
+        # ["Total Sales Tax:", f"{invoice['total_sales_tax']:.2f}"],
+        ["Total Value:", f"{invoice['total_value_incl_tax']:.2f}"],
     ]
     totals_table = Table(totals_data, colWidths=[6*cm, 3*cm])
     totals_table.setStyle(TableStyle([
@@ -694,9 +690,7 @@ def generate_invoice_pdf(sale_id):
                     "quantity": sale["quantity"],
                     "description": sale["product_name"],
                     "unit_price": sale["unit_price"],
-                    "value_excl_tax": sale["unit_price"] * sale["quantity"],
-                    "sales_tax": 0.00,
-                    "value_incl_tax": sale["total_sale"]
+                    "value_excl_tax": sale["unit_price"] * sale["quantity"]
                 }
             ],
             "total_value_excl_tax": sale["unit_price"] * sale["quantity"],
